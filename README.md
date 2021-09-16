@@ -2,6 +2,8 @@
 
 Une extension pour le [GitHub CLI](https://github.com/cli/cli) de basculer sur une branche git du dépôt pix sans connaître son nom, en précisant uniquement le numéro de ticket.
 
+![gh-pix](https://user-images.githubusercontent.com/5627688/133617961-a16d7626-8cab-4e03-9549-7b8892b1e2c5.png)
+
 ## Installation
 ```shell
 gh extension install 1024pix/gh-pix
