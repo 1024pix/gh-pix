@@ -1,0 +1,18 @@
+#!/bin/bash
+
+branchName=$(git branch -r | grep $1)
+
+if [[ "$branchName" =~ ^"*" ]]
+then
+  echo "Déjà sur la branche pour PIX-$1."
+  exit 0;
+fi
+
+if [ -z "$branchName" ]
+then
+  echo "Pas de branche locale pour PIX-$1. Essayez \"git fetch\".";
+  exit 0;
+fi
+
+branchNameWithoutRemote=${branchName#"  origin/"}
+git switch $branchNameWithoutRemote
