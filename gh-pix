@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git fetch
+
 branchName=$(git branch -r | grep $1)
 
 if [[ "$branchName" =~ ^"*" ]]
@@ -10,7 +12,7 @@ fi
 
 if [ -z "$branchName" ]
 then
-  echo "Pas de branche locale pour PIX-$1. Essayez \"git fetch\".";
+  echo "Pas de branche locale pour PIX-$1.";
   exit 0;
 fi
 
