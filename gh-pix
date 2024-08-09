@@ -2,17 +2,18 @@
 
 git fetch
 
-branchName=$(git branch -r | grep $1)
+ticketNumber=$1
+branchName=$(git branch -r | grep $ticketNumber)
 
 if [[ "$branchName" =~ ^"*" ]]
 then
-  echo "Déjà sur la branche pour PIX-$1."
+  echo "Déjà sur la branche pour PIX-$ticketNumber"
   exit 0;
 fi
 
 if [ -z "$branchName" ]
 then
-  echo "Pas de branche locale pour PIX-$1.";
+  echo "Pas de branche locale pour PIX-$ticketNumber";
   exit 0;
 fi
 
