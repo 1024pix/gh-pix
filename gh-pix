@@ -3,7 +3,8 @@
 git fetch
 
 query=$1
-ticketNumber=${query#"PIX-"}
+ticketName=${query#"https://1024pix.atlassian.net/browse/"}
+ticketNumber=${ticketName#"PIX-"}
 
 branchName=$(git branch -r | grep $ticketNumber)
 

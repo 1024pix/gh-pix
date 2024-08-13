@@ -31,5 +31,11 @@ Il est également possible d'entrer le nom du ticket entier (avec le suffixe PIX
 gh pix PIX-1234
 ```
 
+voire même l'URL Jira du ticket :
+
+```shell
+gh pix https://1024pix.atlassian.net/browse/PIX-1234
+```
+
 Le script renverra une erreur si la branche n'est pas trouvée (ou si on y est déjà),
 et sinon, basculera dessus.
