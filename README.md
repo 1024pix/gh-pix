@@ -9,6 +9,12 @@ Une extension pour le [GitHub CLI](https://github.com/cli/cli) de basculer sur u
 gh extension install 1024pix/gh-pix
 ```
 
+### Mise à jour
+
+```shell
+gh extension upgrade pix
+```
+
 ## Usage
 
 Pour basculer sur la branche correspondant au ticket PIX-1234, on écrira :
