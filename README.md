@@ -25,5 +25,11 @@ git checkout pix-1234[TAB][ENTRÉE]
 
 Soit 14 frappes de touches en moins !
 
+Il est également possible d'entrer le nom du ticket entier (avec le suffixe PIX-) :
+
+```shell
+gh pix PIX-1234
+```
+
 Le script renverra une erreur si la branche n'est pas trouvée (ou si on y est déjà),
 et sinon, basculera dessus.
